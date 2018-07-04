@@ -1,7 +1,7 @@
 pipeline{
   agent{ docker 'maven:3.5-alpine'}
   stages{
-    stage{
+    stage('Checkout'){
       steps{
         git 'https://github.com/Venkat2050/spring-petclinic.git'
       }
